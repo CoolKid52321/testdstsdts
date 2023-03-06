@@ -1,0 +1,256 @@
+loadstring([[
+    local isexecutorclosure = is_synapse_function or isexecutorclosure;
+    
+    for i,v in next, getgc() do
+        if type(v) == "function" and islclosure(v) and not isexecutorclosure(v) and getinfo(v).source:find("PlayerModule.LocalScript") then
+            local const = table.find(getconstants(v), 4000001);
+            
+            if const then
+                setconstant(v, const, 1);
+            end
+        end
+     end
+ ]])()
+
+
+
+local Loader = {}      
+
+      repeat
+            wait()
+        until game:IsLoaded()
+        
+        local luckyhubLoader = Instance.new("ScreenGui")
+        local luckyhubimage = Instance.new("ImageLabel")
+        local luckyhubdarkness = Instance.new("Frame")
+
+        local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+        UIAspectRatioConstraint.Parent = BackFrame
+        UIAspectRatioConstraint.AspectRatio = 3.574
+        
+
+        luckyhubLoader.Name = "LuckyHub Loader"
+        luckyhubLoader.Parent = game.CoreGui
+        luckyhubLoader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+        luckyhubdarkness.Name = "LuckyHubDarknessXD"
+        luckyhubdarkness.Parent = luckyhubLoader
+        luckyhubdarkness.AnchorPoint = Vector2.new(0, 0)
+        luckyhubdarkness.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        luckyhubdarkness.BackgroundTransparency = 1
+        luckyhubdarkness.Position = UDim2.new(-0.1, 0, -0.63, 0)
+        luckyhubdarkness.Size = UDim2.new(0, 100000, 0, 100000)
+
+        luckyhubimage.Name = "LuckyHubImage"
+        luckyhubimage.Parent = luckyhubLoader
+        luckyhubimage.AnchorPoint = Vector2.new(0, 0)
+        luckyhubimage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        luckyhubimage.BackgroundTransparency = 1
+        luckyhubimage.Position = UDim2.new(0.353, 0, 0.281, 0)
+        luckyhubimage.Size = UDim2.new(0, 366, 0, 384)
+        luckyhubimage.Image = "rbxassetid://12614192566"
+
+        local Blur = Instance.new('BlurEffect', game.Lighting)
+        Blur.Size = 1
+        luckyhubdarkness.BackgroundTransparency = 0.99
+        luckyhubimage.ImageTransparency = 0.990
+        luckyhubimage.ImageTransparency = 0.980
+        luckyhubimage.ImageTransparency = 0.970
+        luckyhubimage.ImageTransparency = 0.960
+        luckyhubimage.ImageTransparency = 0.950
+        luckyhubimage.ImageTransparency = 0.940
+        luckyhubimage.ImageTransparency = 0.930
+        luckyhubimage.ImageTransparency = 0.920
+        wait(0.1)
+        Blur.Size = 2
+        luckyhubdarkness.BackgroundTransparency = 0.98
+        luckyhubimage.ImageTransparency = 0.910
+        luckyhubimage.ImageTransparency = 0.9
+        luckyhubimage.ImageTransparency = 0.890
+        luckyhubimage.ImageTransparency = 0.880
+        luckyhubimage.ImageTransparency = 0.870
+        luckyhubimage.ImageTransparency = 0.860
+        luckyhubimage.ImageTransparency = 0.850
+        luckyhubimage.ImageTransparency = 0.840
+        wait(0.1)
+        Blur.Size = 3
+        luckyhubdarkness.BackgroundTransparency = 0.97
+        luckyhubimage.ImageTransparency = 0.830
+        luckyhubimage.ImageTransparency = 0.820
+        luckyhubimage.ImageTransparency = 0.810
+        luckyhubimage.ImageTransparency = 0.8
+        luckyhubimage.ImageTransparency = 0.790
+        luckyhubimage.ImageTransparency = 0.780
+        luckyhubimage.ImageTransparency = 0.770
+        luckyhubimage.ImageTransparency = 0.760
+        wait(0.1)
+        Blur.Size = 4
+        luckyhubdarkness.BackgroundTransparency = 0.96
+        luckyhubimage.ImageTransparency = 0.750
+        luckyhubimage.ImageTransparency = 0.740
+        luckyhubimage.ImageTransparency = 0.730
+        luckyhubimage.ImageTransparency = 0.720
+        luckyhubimage.ImageTransparency = 0.710
+        luckyhubimage.ImageTransparency = 0.7
+        luckyhubimage.ImageTransparency = 0.690
+        luckyhubimage.ImageTransparency = 0.680
+        wait(0.1)
+        Blur.Size = 5
+        luckyhubdarkness.BackgroundTransparency = 0.95
+        luckyhubimage.ImageTransparency = 0.670
+        luckyhubimage.ImageTransparency = 0.660
+        luckyhubimage.ImageTransparency = 0.650
+        luckyhubimage.ImageTransparency = 0.640
+        luckyhubimage.ImageTransparency = 0.630
+        luckyhubimage.ImageTransparency = 0.620
+        luckyhubimage.ImageTransparency = 0.610
+        luckyhubimage.ImageTransparency = 0.6
+        wait(0.1)
+        Blur.Size = 6
+        luckyhubdarkness.BackgroundTransparency = 0.94
+        luckyhubimage.ImageTransparency = 0.590
+        luckyhubimage.ImageTransparency = 0.580
+        luckyhubimage.ImageTransparency = 0.570
+        luckyhubimage.ImageTransparency = 0.560
+        luckyhubimage.ImageTransparency = 0.550
+        luckyhubimage.ImageTransparency = 0.540
+        luckyhubimage.ImageTransparency = 0.530
+        luckyhubimage.ImageTransparency = 0.520
+        wait(0.1)
+        Blur.Size = 7
+        luckyhubdarkness.BackgroundTransparency = 0.93
+        luckyhubimage.ImageTransparency = 0.510
+        luckyhubimage.ImageTransparency = 0.5
+        luckyhubimage.ImageTransparency = 0.490
+        luckyhubimage.ImageTransparency = 0.480
+        luckyhubimage.ImageTransparency = 0.470
+        luckyhubimage.ImageTransparency = 0.460
+        luckyhubimage.ImageTransparency = 0.450
+        luckyhubimage.ImageTransparency = 0.440
+        wait(0.1)
+        Blur.Size = 8
+        luckyhubdarkness.BackgroundTransparency = 0.92
+        luckyhubimage.ImageTransparency = 0.510
+        luckyhubimage.ImageTransparency = 0.5
+        luckyhubimage.ImageTransparency = 0.490
+        luckyhubimage.ImageTransparency = 0.480
+        luckyhubimage.ImageTransparency = 0.470
+        luckyhubimage.ImageTransparency = 0.460
+        luckyhubimage.ImageTransparency = 0.450
+        luckyhubimage.ImageTransparency = 0.440
+        wait(0.1)
+        Blur.Size = 9
+        luckyhubdarkness.BackgroundTransparency = 0.91
+        luckyhubimage.ImageTransparency = 0.430
+        luckyhubimage.ImageTransparency = 0.420
+        luckyhubimage.ImageTransparency = 0.410
+        luckyhubimage.ImageTransparency = 0.400
+        luckyhubimage.ImageTransparency = 0.390
+        luckyhubimage.ImageTransparency = 0.380
+        luckyhubimage.ImageTransparency = 0.370
+        luckyhubimage.ImageTransparency = 0.360
+        wait(0.1)
+        Blur.Size = 10
+        luckyhubdarkness.BackgroundTransparency = 0.9
+        luckyhubimage.ImageTransparency = 0.350
+        luckyhubimage.ImageTransparency = 0.340
+        luckyhubimage.ImageTransparency = 0.330
+        luckyhubimage.ImageTransparency = 0.320
+        luckyhubimage.ImageTransparency = 0.310
+        luckyhubimage.ImageTransparency = 0.3
+        luckyhubimage.ImageTransparency = 0.290
+        luckyhubimage.ImageTransparency = 0.280
+        wait(0.1)
+        Blur.Size = 11
+        luckyhubdarkness.BackgroundTransparency = 0.89
+        luckyhubimage.ImageTransparency = 0.270
+        luckyhubimage.ImageTransparency = 0.260
+        luckyhubimage.ImageTransparency = 0.250
+        luckyhubimage.ImageTransparency = 0.240
+        luckyhubimage.ImageTransparency = 0.230
+        luckyhubimage.ImageTransparency = 0.220
+        luckyhubimage.ImageTransparency = 0.210
+        luckyhubimage.ImageTransparency = 0.2
+        wait(0.1)
+        Blur.Size = 12
+        luckyhubdarkness.BackgroundTransparency = 0.88
+        luckyhubimage.ImageTransparency = 0.190
+        luckyhubimage.ImageTransparency = 0.180
+        luckyhubimage.ImageTransparency = 0.170
+        luckyhubimage.ImageTransparency = 0.160
+        luckyhubimage.ImageTransparency = 0.150
+        luckyhubimage.ImageTransparency = 0.140
+        luckyhubimage.ImageTransparency = 0.130
+        luckyhubimage.ImageTransparency = 0.120
+        wait(0.1)
+        Blur.Size = 13
+        luckyhubdarkness.BackgroundTransparency = 0.86
+        luckyhubimage.ImageTransparency = 0.110
+        luckyhubimage.ImageTransparency = 0.1
+        luckyhubimage.ImageTransparency = 0.090
+        luckyhubimage.ImageTransparency = 0.080
+        luckyhubimage.ImageTransparency = 0.070
+        luckyhubimage.ImageTransparency = 0.060
+        luckyhubimage.ImageTransparency = 0.050
+        luckyhubimage.ImageTransparency = 0.040
+        
+        wait(0.1)
+        Blur.Size = 14
+        luckyhubdarkness.BackgroundTransparency = 0.84
+        luckyhubimage.ImageTransparency = 0.030
+        luckyhubimage.ImageTransparency = 0.020
+        luckyhubimage.ImageTransparency = 0.010
+        wait(0.1)
+        Blur.Size = 15
+        luckyhubdarkness.BackgroundTransparency = 0.8
+        luckyhubimage.ImageTransparency = 0
+        wait(3)
+        Blur.Size = 14
+        luckyhubdarkness.BackgroundTransparency = 0.82
+        luckyhubimage.ImageTransparency = 0.1
+        wait(0.1)
+        Blur.Size = 13
+        luckyhubdarkness.BackgroundTransparency = 0.84
+        luckyhubimage.ImageTransparency = 0.2
+        wait(0.1)
+        Blur.Size = 12
+        luckyhubdarkness.BackgroundTransparency = 0.86
+        luckyhubimage.ImageTransparency = 0.3
+        wait(0.1)
+        Blur.Size = 11
+        luckyhubdarkness.BackgroundTransparency = 0.88
+        luckyhubimage.ImageTransparency = 0.4
+        wait(0.1)
+        Blur.Size = 10
+        luckyhubdarkness.BackgroundTransparency = 0.9
+        luckyhubimage.ImageTransparency = 0.5
+        wait(0.1)
+        Blur.Size = 9
+        luckyhubdarkness.BackgroundTransparency = 0.92
+        luckyhubimage.ImageTransparency = 0.6
+        wait(0.1)
+        Blur.Size = 8
+        luckyhubdarkness.BackgroundTransparency = 0.94
+        luckyhubimage.ImageTransparency = 0.7
+        wait(0.1)
+        Blur.Size = 7
+        luckyhubdarkness.BackgroundTransparency = 0.96
+        luckyhubimage.ImageTransparency = 0.8
+        wait(0.1)
+        Blur.Size = 6
+        luckyhubdarkness.BackgroundTransparency = 0.98
+        luckyhubimage.ImageTransparency = 0.95
+        wait(0.1)
+        Blur.Size = 5
+        luckyhubdarkness.BackgroundTransparency = 0.99
+        luckyhubimage.ImageTransparency = 0.975
+        wait(0.1)
+        Blur.Size = 4
+        luckyhubdarkness.BackgroundTransparency = 1
+        luckyhubimage.ImageTransparency = 1
+        wait(0.1)
+        Blur:Destroy()
+        luckyhubdarkness:Destroy()
+        luckyhubLoader:Destroy()
+        script.Parent.Parent.Parent.Parent.Parent.luckyhubLoader:Destroy()
