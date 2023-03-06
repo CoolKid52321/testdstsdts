@@ -254,3 +254,17 @@ local Loader = {}
         luckyhubdarkness:Destroy()
         luckyhubLoader:Destroy()
         script.Parent.Parent.Parent.Parent.Parent.luckyhubLoader:Destroy()
+            wait(0.25)
+            goingDownxd:TweenPosition(UDim2.new(0.493, 0,1.07, 0))
+            wait(1)
+            script.Parent.Parent.Parent.Parent.Parent.luckyhubLoader:Destroy()
+        end
+        coroutine.wrap(TFOQWM_fake_script)()
+        local function DDIVBK_fake_script()
+            local script = Instance.new('LocalScript', BackFrame)
+        
+            script.Parent:TweenPosition(UDim2.new(0.5, 0,0.499, 0))
+        end
+        coroutine.wrap(DDIVBK_fake_script)()
+        
+wait(6)
